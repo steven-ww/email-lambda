@@ -1,4 +1,6 @@
-# Using SES and Quarkus Lambda to send emails received via SES.
+# Using SES and a Quarkus Lambda to send emails.
+
+Full description here : https://steven-webber.com/2020/09/03/using-a-quarkus-lambda-with-ses/
 
 # AWS Setup
 
