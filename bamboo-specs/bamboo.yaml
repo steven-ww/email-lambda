@@ -1,0 +1,28 @@
+---
+version: 2
+plan:
+  project-key: email-lambda
+  key: EMAIL-LAMBDA
+  name: Build the email-lambda
+
+# List of plan's stages and jobs
+stages:
+  - Build the rocket stage:
+      - Build
+
+#Job definition
+Build:
+  tasks:
+    - script:
+        - mvn package
+  # Job's requirements
+  requirements:
+    - Docker
+    - JDK
+    - MVN
+  # Job's artifacts. Artifacts are shared by default.
+  artifacts:
+    - name: Packaged Uber JAR
+      pattern: target/email-lambda-1.0-SNAPSHOT-runner.jar
+    - name: Zipped Function
+      pattern: target/function.zip
