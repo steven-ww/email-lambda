@@ -1,8 +1,8 @@
 ---
 version: 2
 plan:
-  project-key: email-lambda
-  key: EMAILLAMBDA
+  project-key: EMAILLAMBDA
+  key: BUILDELAMBDA
   name: Build the email-lambda
 
 # List of plan's stages and jobs
