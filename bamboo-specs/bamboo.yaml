@@ -15,9 +15,9 @@ Build:
   tasks:
     - script:
         - mvn package
-      testParsers:
-        - type: junit
-          test-results: '**target/surefire-reports/*.xml'
+    - test-parser:
+        type: junit
+        test-results: '**target/surefire-reports/*.xml'
   # Job's requirements
   requirements:
     - Docker
